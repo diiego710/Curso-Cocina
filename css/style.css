@@ -1,0 +1,445 @@
+:root {
+    --primario: rgb(27, 27, 50);
+    --secundario: #ff3b3f;
+    --blanco: #fff;
+    --negro: #000;
+
+    --fuentePrincipal: 'Ubuntu', sans-serif;
+    --fuenteHeading: 'Tilt Neon', cursive;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Globales**/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+.boton {
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    transition: .3s;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    margin-bottom: 2rem;
+}
+
+.boton:hover {
+    background-color: var(--primario);
+    color: var(--secundario);
+}
+
+
+.heading__titulo {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuenteHeading);
+    font-size: 3.5rem;
+    margin: 3rem 0;
+    font-weight: bold;
+}
+
+/* Header */
+
+.header-banner {
+    background-image: url(../img/Gastronomía.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 750px;
+}
+
+.header__contenido {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__titulo {
+    color: #fff;
+    text-shadow: 2px 2px var(--negro);
+    margin-left: 2rem;
+    font-size: 4.5rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+@media (max-width: 992px) {
+    .header__contenido {
+        width: 100%;
+    }
+
+    .header__titulo {
+        font-size: 3.5rem;
+    }
+}
+
+/**Navegacion**/
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(27 27 50 /90%);
+    z-index: 10;
+    padding-bottom: 1.5rem;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar-brand img {
+    width: 280px;
+}
+
+.navbar-collapse {
+    margin-left: 1rem;
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    margin-bottom: .5rem;
+    border: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../img/menu.png);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none
+}
+
+.nav-link {
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.nav-link:hover {
+    color: var(--secundario);
+}
+
+/* Habilidades */
+
+.habilidades {
+    margin: 4rem 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.habilidades__texto {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.Habilidades__img {
+    width: 70px;
+}
+
+.img-left {
+    transform: rotate(90deg);
+}
+
+@media (max-width: 576px) {
+    .habilidades img {
+        display: none;
+    }
+}
+
+/* Cursos del Home */
+
+.hero__grid {
+    display: grid;
+    gap: 3rem;
+    margin: 4rem 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 992px) {
+    .hero__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.curso {
+    -webkit-box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.75);
+    transition: all .3s ease;
+}
+
+.curso,
+.curso img {
+    border-radius: 10px;
+}
+
+.curso:hover {
+    transform: scale(1.1);
+}
+
+.curso__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curso__nombre {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Certificado */
+.margen {
+    margin-bottom: 5rem;
+}
+
+.certificado {
+    padding: 2rem;
+    margin: 1rem;
+    transition: all .3s ease-in;
+}
+
+.certificado img {
+    width: 80px;
+}
+
+.certificado__info {
+    margin-left: 2rem;
+}
+
+.certificado:hover {
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+
+/**Footer**/
+.footer {
+    background-color: var(--primario);
+    height: 25rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.borde {
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+
+}
+
+.footer p {
+    color: var(--blanco);
+}
+
+.footer__iconos i {
+    padding: 1rem;
+    color: var(--blanco);
+    font-size: 3rem;
+    transition: all .2s ease;
+}
+
+.footer__iconos i:hover {
+    color: var(--secundario);
+}
+
+.footer__contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__contacto a {
+    color: var(--blanco);
+}
+
+.footer__contacto a:hover {
+    color: gray;
+}
+
+.footer__contacto span {
+    color: var(--blanco);
+    margin: 0 1rem;
+}
+
+.footer__copy {
+    margin: 1rem;
+}
+
+
+/* Pagina de Curso */
+
+/* Hero de page cursos */
+.img__curso {
+    background-image: url(../img/77166.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom
+}
+
+/* Contenido de page Curso */
+
+.secction__contenido {
+    display: grid;
+    gap: 2rem;
+    margin: 4rem;
+}
+
+.secction__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    ;
+}
+
+.secction__nombre {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.secction-parrafo {
+    padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .secction-button,
+    .secction__nombre {
+        width: 100%;
+        text-align: center;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .secction__contenido {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .secction__contenido{
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+
+/**Quienes Somos**/
+.contenido-imagen {
+    text-align: center;
+}
+
+
+
+.contenido-texto h2 {
+    color: rgb(13, 95, 189);
+}
+
+
+/**Contacto**/
+.contactos h2 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.formulario {
+    width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.campo textarea {
+    height: 20rem;
+}
+
+.input-text {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+/**FAQ**/
+
+.consultas {
+    margin: 5rem 0;
+}
+
+.consultas h1 {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.consultas-contenido p {
+    text-align: left;
+}
+
+.consultas-contenido h2 {
+    padding: 1rem;
+    color: rgb(3, 78, 162);
+}
