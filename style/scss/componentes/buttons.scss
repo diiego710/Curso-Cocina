@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+
+.boton {
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    transition: .3s;
+    background-color: v.$secundario;
+    color: v.$blanco;
+    margin-bottom: 2rem;
+
+    &:hover{
+        background-color:v.$primario;
+        color: v.$secundario;
+    }
+}

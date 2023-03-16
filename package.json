@@ -1,0 +1,21 @@
+{
+  "name": "curso-cocina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch style/scss/style.scss style/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diiego710/curso-cocina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diiego710/curso-cocina/issues"
+  },
+  "homepage": "https://github.com/diiego710/curso-cocina#readme"
+}

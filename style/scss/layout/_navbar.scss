@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as v;
+@use '../base/tipografia' as t;
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(27 27 50 /90%);
+    z-index: 10;
+    padding-bottom: 1.5rem;
+
+    .container {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .navbar-brand img {
+        width: 280px;
+    }
+}
+
+.navbar-toggler {
+    margin-bottom: .5rem;
+    border: transparent;
+
+    .navbar-toggler-icon {
+        background-image: url(../../img/menu.png);
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none
+    }
+
+}
+
+.navbar-collapse {
+    margin: 1rem;
+    justify-content: flex-end;
+
+    .nav-link {
+        color: v.$blanco;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.7rem;
+        font-family: t.$fuentePrincipal;
+
+        &:hover {
+            color: v.$secundario;
+        }
+    }
+    
+}

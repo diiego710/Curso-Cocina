@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as v;
+@use '../base/tipografia' as t;
+
+.footer {
+    background-color: v.$primario;
+    text-align: center;
+    padding: 2rem;
+    color: v.$blanco;
+
+    &__iconos i {
+        padding: 1rem;
+        color: v.$blanco;
+        font-size: 3rem;
+        transition: all .2s ease;
+
+        &:hover {
+            color: v.$secundario;
+        }
+    }
+}
+
+.footer__contacto {
+    display: flex;
+    justify-content: center;
+
+    a {
+        color: v.$blanco;
+
+        &:hover{
+            color: gray;
+        }
+    }
+}
+
+
+.footer__contacto span {
+    color: v.$blanco;
+    margin: 0 1rem;
+}
+
+.footer__copy {
+    margin: 1rem;
+}
+
+.borde {
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+
+}

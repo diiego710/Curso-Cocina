@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as v;
+@use '../base/tipografia' as t;
+
+.heading__titulo {
+    text-align: center;
+    color: v.$secundario;
+    font-family: t.$fuenteHeading;
+    font-size: 3.5rem;
+    margin: 3rem 0;
+    font-weight: bold;
+}
