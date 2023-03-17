@@ -9,25 +9,28 @@
 }
 
 
-@media (min-width:992px) {
+@media (min-width:768px) {
     .nosotros {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .nosotros__contenido {
-        .nosotros__imagen {
-            margin-left: 41rem;
-        }
+        grid-column: 1 / 4;
     }
 
-    .primer-texto {
-        margin-top: 20rem;
-        margin-left: -28rem;
+    .nosotros__contenido-2 {
+        grid-column: 2 / 5;
     }
 
-    .segundo-texto {
-        margin-top: 28rem;
-        margin-left: -79rem;
-        margin-right: 43rem;
+    .nosotros__texto {
+        margin-left: -33rem;
+        margin-top: 26rem;
+    }
+
+    .nosotros__segunda-columna {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-top: 31rem;
+        margin-right: -33rem;
     }
 }
