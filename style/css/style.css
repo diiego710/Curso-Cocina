@@ -303,34 +303,24 @@ img {
 .nosotros {
   margin: 2rem 1rem;
   display: grid;
-}
-.nosotros .nosotros__texto .primer-texto {
-  margin: 2rem 0;
+  gap: 2rem;
 }
 
-.nosotros-columna {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.nosotros-columna .nosotros__imagen {
-  grid-column: 2/3;
-}
-.nosotros-columna .segundo-texto {
-  margin-right: -23rem;
-  margin-top: 27rem;
-}
-
-.nosotros__segunda-columna {
-  grid-row: 1/2;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nosotros {
     grid-template-columns: 2fr 1fr;
   }
-  .nosotros .nosotros__texto .primer-texto {
-    margin-left: -25rem;
+  .nosotros__contenido .nosotros__imagen {
+    margin-left: 41rem;
+  }
+  .primer-texto {
     margin-top: 20rem;
+    margin-left: -28rem;
+  }
+  .segundo-texto {
+    margin-top: 28rem;
+    margin-left: -79rem;
+    margin-right: 43rem;
   }
 }
 

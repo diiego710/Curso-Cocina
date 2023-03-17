@@ -5,44 +5,29 @@
 .nosotros {
     margin: 2rem 1rem;
     display: grid;
-
-    .nosotros__texto {
-        .primer-texto {
-            margin: 2rem 0;
-        }
-    }
+    gap: 2rem;
 }
 
-.nosotros-columna {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
 
-
-    .nosotros__imagen {
-        grid-column: 2 / 3;
-    }
-
-
-    .segundo-texto {
-        margin-right: -23rem;
-        margin-top: 27rem;
-
-    }
-}
-
-.nosotros__segunda-columna {
-    grid-row: 1 / 2;
-}
-
-@media (min-width: 768px) {
+@media (min-width:992px) {
     .nosotros {
         grid-template-columns: 2fr 1fr;
+    }
 
-        .nosotros__texto {
-            .primer-texto {
-                margin-left: -25rem;
-                margin-top: 20rem;
-            }
+    .nosotros__contenido {
+        .nosotros__imagen {
+            margin-left: 41rem;
         }
+    }
+
+    .primer-texto {
+        margin-top: 20rem;
+        margin-left: -28rem;
+    }
+
+    .segundo-texto {
+        margin-top: 28rem;
+        margin-left: -79rem;
+        margin-right: 43rem;
     }
 }
