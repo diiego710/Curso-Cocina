@@ -1,39 +1,38 @@
 @use '../abstracts/variables' as v;
 @use '../base/tipografia' as t;
 
+
+
 .navbar {
     width: 100%;
-    position: fixed;
-    background-color: rgb(27 27 50 /90%);
-    z-index: 10;
-    padding-bottom: 1.5rem;
+    background-color: v.$primario;
+    padding-bottom: 3.5rem;
 
-    .container {
-        display: flex;
-        align-items: flex-end;
-    }
+    .navbar-brand {
+        img {
+            width: 280px;
+        }
 
-    .navbar-brand img {
-        width: 280px;
     }
 }
 
+
 .navbar-toggler {
-    margin-bottom: .5rem;
+    margin-bottom: -3.5rem;
     border: transparent;
 
-    .navbar-toggler-icon {
+    &-icon {
         background-image: url(../../img/menu.png);
     }
 
-    .navbar-toggler:focus {
+    &:focus {
         box-shadow: none
     }
 
 }
 
 .navbar-collapse {
-    margin: 1rem;
+    margin-bottom: -3rem;
     justify-content: flex-end;
 
     .nav-link {
@@ -47,5 +46,4 @@
             color: v.$secundario;
         }
     }
-    
 }

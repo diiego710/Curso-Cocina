@@ -8,6 +8,14 @@
   font-weight: bold;
 }
 
+.nosotros__parrafo {
+  color: #fff;
+  background-color: rgb(27, 27, 50);
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,7 +59,13 @@ img {
   color: #ff3b3f;
 }
 
-.header-banner {
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.banner {
   background-image: url(../../img/Gastronomía.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,13 +73,13 @@ img {
   width: 100%;
   height: 750px;
 }
-.header-banner .header__contenido {
+.banner__contenido {
   width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-.header-banner .header__contenido .header__text {
+.banner__text {
   color: #fff;
   text-shadow: 2px 2px #000;
   margin-left: 2rem;
@@ -83,32 +97,26 @@ img {
 }
 .navbar {
   width: 100%;
-  position: fixed;
-  background-color: rgba(27, 27, 50, 0.9);
-  z-index: 10;
-  padding-bottom: 1.5rem;
-}
-.navbar .container {
-  display: flex;
-  align-items: flex-end;
+  background-color: rgb(27, 27, 50);
+  padding-bottom: 3.5rem;
 }
 .navbar .navbar-brand img {
   width: 280px;
 }
 
 .navbar-toggler {
-  margin-bottom: 0.5rem;
+  margin-bottom: -3.5rem;
   border: transparent;
 }
-.navbar-toggler .navbar-toggler-icon {
+.navbar-toggler-icon {
   background-image: url(../../img/menu.png);
 }
-.navbar-toggler .navbar-toggler:focus {
+.navbar-toggler:focus {
   box-shadow: none;
 }
 
 .navbar-collapse {
-  margin: 1rem;
+  margin-bottom: -3rem;
   justify-content: flex-end;
 }
 .navbar-collapse .nav-link {
@@ -247,12 +255,12 @@ img {
 }
 
 /* Hero de page cursos */
-.img__curso {
-  background-image: url(../../img/77166.jpg);
-  height: 600px;
+.curso-banner {
+  background-image: url(../../../img/77166.jpg);
+  height: 750px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
 /* Contenido de page Curso */
@@ -290,6 +298,39 @@ img {
 @media (min-width: 992px) {
   .secction__contenido {
     grid-template-columns: 1fr 3fr;
+  }
+}
+.nosotros {
+  margin: 2rem 1rem;
+  display: grid;
+}
+.nosotros .nosotros__texto .primer-texto {
+  margin: 2rem 0;
+}
+
+.nosotros-columna {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.nosotros-columna .nosotros__imagen {
+  grid-column: 2/3;
+}
+.nosotros-columna .segundo-texto {
+  margin-right: -23rem;
+  margin-top: 27rem;
+}
+
+.nosotros__segunda-columna {
+  grid-row: 1/2;
+}
+
+@media (min-width: 768px) {
+  .nosotros {
+    grid-template-columns: 2fr 1fr;
+  }
+  .nosotros .nosotros__texto .primer-texto {
+    margin-left: -25rem;
+    margin-top: 20rem;
   }
 }
 

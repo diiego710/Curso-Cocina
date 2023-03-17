@@ -4,53 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reparaciones Samsung</title>
+    <title>Cursos Cocina</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo-icono.png" type="image/x-icon">
+
+    <!-- BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tilt+Neon&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="../style/css/style.css">
-
-    <link rel="shortcut icon" href="../img/Samsung_Logo.svg.ico" type="image/x-icon">
+    <!-- Favicon -->
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="../img/Samsung_Logo.svg.png" alt="Logotipo">
-            </a>
-        </div>
+    <!-- Header & Nav -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-cocina.png" alt="Logo de la compania">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/quienes-somos.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <nav class="navegacion">
-        <div class="navegacion-enlaces contenedor">
-            <a href="../index.html">Inicio</a>
-            <a href="./quienes-somos.html">Quienes Somos</a>
-            <a href="./redes.html">Redes</a>
-            <a href="./contactos.html">Conctactos</a>
-            <a href="./faq.html">FAQ</a>
-        </div>
-    </nav>
+    <section class="contenedor">
+        <h1 class="heading__titulo">Quienes Somos</h1>
 
-    <main class="contenedor">
-        <div class="contenido-imagen">
-          <img src="../img/servicio-tecnico-oficial-samsung.jpg" alt="">
+        <div class="nosotros">
+            <div class="nosotros__imagen">
+                <img src="../img/aprende_online_chef_estrella_foodies_cocina_platillos.jpg" alt="">
+            </div>
+            <div class="nosotros__texto">
+                <p class="nosotros__parrafo primer-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor
+                    sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec
+                    mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut,
+                    vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec
+                    vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque
+                    laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris,
+                    malesuada quis ornare accumsan, blandit sed diam.</p>
+            </div>
+    
+    
+            <div class="nosotros__imagen">
+                <img src="../img/chef-header.jpg" alt="">
+            </div>
+            <div class="nosotros__segunda-columna">
+                <p class="nosotros__parrafo segundo-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor
+                    sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec
+                    mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut,
+                    vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec
+                    vulputate justo hendrerit.</p>
+            </div>
         </div>
-        <div class="contenido-texto">
-            <h2>Los electodomesticos con la mejor tecnologia</h2>
+    </section>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, et recusandae vitae quo omnis fugit praesentium blanditiis a ratione reiciendis, impedit delectus distinctio exercitationem expedita ad illo rem possimus voluptatem.
-            Tempora explicabo, architecto veritatis sequi pariatur, debitis quisquam perspiciatis, aliquam perferendis enim ut voluptas ipsa maiores et incidunt quaerat veniam. Aspernatur quaerat laboriosam corporis ut sit reprehenderit, molestias quidem iusto.
-            Dicta velit veniam obcaecati sunt similique quidem, error omnis ipsum ut illo, voluptatem sint, commodi inventore consequatur accusantium. Est blanditiis quia porro dolorum repellat minus quasi totam error officia hic.
-            Saepe commodi tempore, tempora inventore beatae aliquid voluptatum, eaque voluptatibus nemo vel ratione distinctio nisi! Reiciendis adipisci ea vel possimus nesciunt excepturi repellat, asperiores sint dolorum suscipit quasi cupiditate veniam!</p>
-        </div>
-    </main>
+
 
     <footer class="footer">
-        <p>Samsung &copy; Todos los derechos reservados</p>
+        <div class="contenedor">
+            <div class="footer__iconos borde">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <div class="footeer__logo borde">
+                <a href="../index.html">
+                    <img src="../img/logo-cocina.png" width="120" alt="Logo de la compania">
+                </a>
+            </div>
+            <div class="footer__contacto borde">
+                <a href="./contactos.html">Contactos</a>
+                <span>|</span>
+                <a href="#">Informacion Legal</a>
+            </div>
+            <div class="footer__copy">
+                <p>Cursos Cocina &copy; Todos los derechos reservados - 2023</p>
+            </div>
+        </div>
+
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as v;
+@use '../base/tipografia' as t;
+
+
+.nosotros {
+    margin: 2rem 1rem;
+    display: grid;
+
+    .nosotros__texto {
+        .primer-texto {
+            margin: 2rem 0;
+        }
+    }
+}
+
+.nosotros-columna {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+
+    .nosotros__imagen {
+        grid-column: 2 / 3;
+    }
+
+
+    .segundo-texto {
+        margin-right: -23rem;
+        margin-top: 27rem;
+
+    }
+}
+
+.nosotros__segunda-columna {
+    grid-row: 1 / 2;
+}
+
+@media (min-width: 768px) {
+    .nosotros {
+        grid-template-columns: 2fr 1fr;
+
+        .nosotros__texto {
+            .primer-texto {
+                margin-left: -25rem;
+                margin-top: 20rem;
+            }
+        }
+    }
+}

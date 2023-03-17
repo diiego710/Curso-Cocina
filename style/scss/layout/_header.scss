@@ -1,7 +1,13 @@
 @use '../abstracts/variables' as v;
 @use '../base/tipografia' as t;
 
-.header-banner {
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.banner {
     background-image: url(../../img/Gastronomía.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,20 +15,19 @@
     width: 100%;
     height: 750px;
 
-
-    .header__contenido {
+    &__contenido {
         width: 40%;
         height: 100%;
         display: flex;
         align-items: center;
-    
-        .header__text {
-            color: #fff;
-            text-shadow: 2px 2px v.$negro;
-            margin-left: 2rem;
-            font-size: 4.5rem;
-            font-family: t.$FuenteTitulo;
-        }
+    }
+
+    &__text {
+        color: #fff;
+        text-shadow: 2px 2px v.$negro;
+        margin-left: 2rem;
+        font-size: 4.5rem;
+        font-family: t.$FuenteTitulo;
     }
 }
 
