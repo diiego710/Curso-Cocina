@@ -4,77 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reparaciones Samsung</title>
+    <title>Cursos Cocina</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/logo-icono.png" type="image/x-icon">
+
+    <!-- BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tilt+Neon&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="../style/css/style.css">
-
-    <link rel="shortcut icon" href="../img/Samsung_Logo.svg.ico" type="image/x-icon">
+    <!-- Favicon -->
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="../img/Samsung_Logo.svg.png" alt="Logotipo">
-            </a>
-        </div>
+    <!-- Header & Nav -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-cocina.png" alt="Logo de la compania">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/quienes-somos.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <nav class="navegacion">
-        <div class="navegacion-enlaces contenedor">
-            <a href="../index.html">Inicio</a>
-            <a href="./quienes-somos.html">Quienes Somos</a>
-            <a href="./redes.html">Redes</a>
-            <a href="./contactos.html">Conctactos</a>
-            <a href="./faq.html">FAQ</a>
+    <section class="contacto">
+        <div class="contacto__contenido">
+            <h2 class="heading__titulo">Contactos</h2>
         </div>
-    </nav>
-
-    <main class="contenedor">
-        <div class="contactos">
-            <h2>Contacto</h2>
-
-            <form class="formulario">
-                <fieldset>
-
-
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                            <label for="nombre">Nombre</label>
-                            <input class="input-text" type="text" id="nombre">
-                        </div>
-
-                        <div class="campo">
-                            <label for="telefono">Teléfono</label>
-                            <input class="input-text" type="tel" id="telefono" >
-                        </div>
-
-                        <div class="campo">
-                            <label for="correo">Correo</label>
-                            <input class="input-text" type="email" id="correo">
-                        </div>
-                
-                        <div class="campo">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea class="input-text" id="mensaje"></textarea>
-                        </div>
-                    </div> <!-- .contenedor-campos -->
-
-                    <div>
-                        <input class="boton" type="submit" value="Enviar">
-                    </div>
-                </fieldset>
-            </form>
         </div>
-    </main>
+    </section>
+
+    <div class="contenedor">
+        <form class="formulario">
+            <fieldset>
+                <legend>Contáctanos para ayudarte</legend>
+                <div class="campo__contenido">
+                    <label for="nombre">Nombre</label>
+                    <input class="campo" type="text" id="nombre" required>
+
+                    <label for="telefono">Telefono</label>
+                    <input class="campo" type="tel" id="telefono" required>
+
+                    <label for="email">Email:</label>
+                    <input class="campo" type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="campo campo-height" id="mensaje" required></textarea>
+
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
     <footer class="footer">
-        <p>Samsung &copy; Todos los derechos reservados</p>
+        <div class="contenedor">
+            <div class="footer__iconos borde">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <div class="footeer__logo borde">
+                <a href="../index.html">
+                    <img src="../img/logo-cocina.png" width="120" alt="Logo de la compania">
+                </a>
+            </div>
+            <div class="footer__contacto borde">
+                <a href="./contactos.html">Contactos</a>
+                <span>|</span>
+                <a href="#">Informacion Legal</a>
+            </div>
+            <div class="footer__copy">
+                <p>Cursos Cocina &copy; Todos los derechos reservados - 2023</p>
+            </div>
+        </div>
+
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

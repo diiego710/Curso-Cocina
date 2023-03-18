@@ -14,20 +14,20 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .nosotros__contenido {
+    .nosotros__primera-imagen {
         grid-column: 1 / 4;
     }
 
-    .nosotros__contenido-2 {
+    .nosotros__segunda-imagen {
         grid-column: 2 / 5;
     }
 
-    .nosotros__texto {
+    .nosotros__descripcion-primera {
         margin-left: -33rem;
         margin-top: 26rem;
     }
 
-    .nosotros__segunda-columna {
+    .nosotros__descripcion-segunda {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         margin-top: 31rem;
