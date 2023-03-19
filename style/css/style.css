@@ -379,4 +379,26 @@ img {
   height: 20rem;
 }
 
+.accordion {
+  margin: 0 1rem;
+}
+.accordion h3 {
+  margin: 2rem 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.accordion-header p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ff3b3f;
+}
+
+.acordion {
+  margin-bottom: 8rem;
+}
+
 /*# sourceMappingURL=style.css.map */

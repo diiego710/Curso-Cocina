@@ -4,65 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reparaciones Samsung</title>
+    <title>Cursos Cocina</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/logo-icono.png" type="image/x-icon">
+
+    <!-- BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tilt+Neon&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="../style/css/style.css">
-
-    <link rel="shortcut icon" href="../img/Samsung_Logo.svg.ico" type="image/x-icon">
+    <!-- Favicon -->
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="../img/Samsung_Logo.svg.png" alt="Logotipo">
-            </a>
-        </div>
+    <!-- Header & Nav -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-cocina.png" alt="Logo de la compania">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/quienes-somos.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <nav class="navegacion">
-        <div class="navegacion-enlaces contenedor">
-            <a href="../index.html">Inicio</a>
-            <a href="./quienes-somos.html">Quienes Somos</a>
-            <a href="./redes.html">Redes</a>
-            <a href="./contactos.html">Conctactos</a>
-            <a href="./faq.html">FAQ</a>
+    <section class="contenedor">
+        <h1 class="heading__titulo">Preguntas Frecuentes</h1>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <h3>Cursos, Contenidos, Certificados</h3>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <p>¿Que son los Cursos Cocina?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        Curso Cocina te permiten adquirir de manera accesible y económica una serie
+                        de conocimientos y habilidades en gastronomía: cocina, repostería y pastelería, coctelería, etc.
+                        Cada curso está formado por varias lecciones que combinan vídeos y textos junto a materiales
+                        didácticos complementarios.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <p>¿Cuándo empiezan y cuándo acaban los cursos?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        La modalidad de los cursos es 100% online, por tanto empiezan y acaban cuando tú quieras. Tú
+                        marcas el ritmo de aprendizaje.
+                        Puedes volver a ver lo que te interese, pasar lo que ya te sepas y hacer preguntas en el foro
+                        para resolver tus dudas. Los cursos además no tienen caducidad, por lo que los podrás volver a
+                        ver las veces que quieras sin límite de tiempo.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        <p>¿Como se presentan los contenidos?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        Cada curso incluye lecciones en formato vídeo de alta calidad impartidas por los profesores, un
+                        recetario completo y material complementario (apuntes) en PDF que se podrán descargar.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        <p>¿Tendré un certificado si completo el curso?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        Sí, cuando finalices cada curso obtendrás un Certificado con tu nombre y el del curso, en
+                        reconocimiento del esfuerzo dedicado y de los conocimientos y habilidades adquiridas.
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </nav>
+    </section>
 
-    <main class="contenedor">
-        <div class="consultas">
-            <h1>Preguntas mas frecuentes</h1>
-            <div class="consultas-contenido">
-                <h2>Garantias</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusantium tempora, tempore sint cum error iste dolor doloribus at harum dolorum modi earum nisi vero suscipit consectetur pariatur praesentium rerum?
-                Voluptates est, blanditiis beatae ipsa sit nisi sequi at fugit cupiditate hic illum itaque vel repellat aliquam recusandae commodi rem aliquid quis pariatur voluptatem sunt tenetur voluptas ut quae. Error!</p>
+
+    <!-- Pagos y devoluciones -->
+    <section class="contenedor acordion">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <h3>Pagos y Devoluciones</h3>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        <p>¿Cuál es la política de devolución de los cursos?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        Si una vez comprado el curso no es lo que esperabas puedes solicitar la devolución antes de que
+                        hayan pasado 7 días desde el momento de compra y siempre que no hayas visualizado más del 20%
+                        del curso.
+                    </div>
+                </div>
             </div>
 
-            <div class="consultas-contenido">
-                <h2>Servicios en linea</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusantium tempora, tempore sint cum error iste dolor doloribus at harum dolorum modi earum nisi vero suscipit consectetur pariatur praesentium rerum?
-                Voluptates est, blanditiis beatae ipsa sit nisi sequi at fugit cupiditate hic illum itaque vel repellat aliquam recusandae commodi rem </p>
-            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSix">
+                        <p>¿Como realizo el pago?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        El pago de los Cursos y Suscripción se puede realizar mediante tarjeta de crédito/débito (Visa o
+                        MasterCard) en nuestra pasarela segura de pago Stripe o a través de una cuenta PayPal.
 
-            <div class="consultas-contenido">
-                <h2>Smart Service</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste labore optio sunt. Obcaecati, ducimus ex doloremque quidem optio sunt quisquam corporis consequatur commodi esse? Quibusdam voluptatibus voluptas ratione possimus!
-                Illo atque nesciunt quis maiores! Consectetur hic ex repellat qui adipisci asperiores accusamus, pariatur dolorem repudiandae officia sunt consequatur optio nesciunt, cupiditate quae libero aut dolor ea! Nobis, voluptatem facere?
-                Minus accusamus repellat ipsa culpa, qui necessitatibus. At ratione, recusandae optio harum a accusamus consequuntur laboriosam repudiandae porro qui ab repellendus id eius eum ut voluptatibus, excepturi esse necessitatibus sit?
-                Dolores, aliquam. Adipisci maxime dolorum molestias. Iusto, aspernatur nihil. Architecto obcaecati in consequatur accusamus nobis eligendi, odit illum sapiente numquam ea, delectus dignissimos facere aliquid? Modi veritatis nesciunt voluptas soluta.</p>
-            </div>
+                        En caso que dispongas de tarjetas de crédito/débito American Express, Maestro, Aurora o
+                        Discover, podrás realizar el pago a través de la plataforma PayPal (sin necesidad de disponer o
+                        tener que crearse una cuenta en PayPal).
 
-          
-    </main>
+                        También, si lo deseas, puedes realizar el pago de los cursos por transferencia bancaria pero el
+                        proceso es manual y un poco más lento. Solamente pordrás abonar por este medio si tienes una
+                        cuenta en Europa. Si deseas pagar por transferencia infórmanos y te indicaremos los pasos.
+
+                        Por último, podráas abonar mediante un link de pago de Paypal. En ese caso, infórmanos y te
+                        indicaremos los pasos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headinSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsSeven" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapsSeven">
+                        <p>¿Cómo se aplican los descuentos de los cupones?</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapsSeven" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headinSeven">
+                    <div class="accordion-body">
+                        Tienes que seguir los pasos de compra habituales y antes de finalizar la compra de cualquier
+                        producto, encontrarás un enlace para introducir el código del cupón promocional. Esto restará el
+                        importe del cupón sobre el importe del producto o aplicará el descuento correspondiente.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
-        <p>Samsung &copy; Todos los derechos reservados</p>
+        <div class="contenedor">
+            <div class="footer__iconos borde">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <div class="footeer__logo borde">
+                <a href="../index.html">
+                    <img src="../img/logo-cocina.png" width="120" alt="Logo de la compania">
+                </a>
+            </div>
+            <div class="footer__contacto borde">
+                <a href="./contactos.html">Contactos</a>
+                <span>|</span>
+                <a href="#">Informacion Legal</a>
+            </div>
+            <div class="footer__copy">
+                <p>Cursos Cocina &copy; Todos los derechos reservados - 2023</p>
+            </div>
+        </div>
+
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

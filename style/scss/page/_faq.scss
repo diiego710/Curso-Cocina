@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as v;
+@use '../base/tipografia' as t;
+
+
+.accordion{
+    margin: 0 1rem ;
+    h3{
+        margin: 2rem 0;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+}
+
+.accordion-header{
+    p{
+        margin: 0;
+        font-size: 2rem;
+    }
+}
+
+.accordion-button:not(.collapsed){
+    color: v.$secundario;
+}
+
+.acordion{
+    margin-bottom:8rem;
+}
