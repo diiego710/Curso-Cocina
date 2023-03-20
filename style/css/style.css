@@ -66,7 +66,7 @@ img {
 }
 
 .banner {
-  background-image: url(../../img/Gastronomía.jpg);
+  background-image: url(../../img/Gastronomía.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -99,9 +99,6 @@ img {
   width: 100%;
   background-color: rgb(27, 27, 50);
   padding-bottom: 3.5rem;
-}
-.navbar .navbar-brand img {
-  width: 280px;
 }
 
 .navbar-toggler {
@@ -256,7 +253,7 @@ img {
 
 /* Hero de page cursos */
 .curso-banner {
-  background-image: url(../../img/77166.jpg);
+  background-image: url(../../img/77166.webp);
   height: 750px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -328,7 +325,7 @@ img {
   }
 }
 .contacto {
-  background-image: url(../../img/breakfast-collage-2-1600x-q88.jpg);
+  background-image: url(../../img/breakfast-collage-2-1600x-q88.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -388,7 +385,7 @@ img {
   font-size: 2.5rem;
 }
 
-.accordion-header p {
+.accordion-header span {
   margin: 0;
   font-size: 2rem;
 }
