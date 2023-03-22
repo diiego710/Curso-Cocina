@@ -14,6 +14,9 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
+    <!-- Animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,18 +69,28 @@
         <h1 class="heading__titulo">Quienes Somos</h1>
 
         <div class="nosotros">
-            <div class="nosotros__primera-imagen">
+            <div class="nosotros__primera--imagen" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="../img/nosotros-fondo-1.webp" alt="Dos aprendiz de la cocina">
             </div>
-            <div class="nosotros__descripcion-primera">
-                <p class="nosotros__texto">Bienvenidos a Cursos Cocina, donde exploraremos el arte culinario y aprenderemos a preparar deliciosos platos que deleitarán a nuestros paladares. Durante estos cursos, nos enfocaremos en mejorar nuestras habilidades culinarias, desde la selección de ingredientes frescos hasta la presentación final del plato. Juntos, exploraremos las técnicas de cocina y las herramientas necesarias para preparar una variedad de platos que satisfagan diferentes gustos y necesidades dietéticas. Además, compartiremos consejos y trucos para hacer la cocina más fácil y divertida. Esperamos que con estos cursos sea una experiencia gratificante y que cada uno de nosotros pueda llevar a casa nuevas habilidades y conocimientos culinarios.</p>
+            <div class="nosotros__descripcion--primera" data-aos="fade-left" data-aos-duration="1000">
+                <p class="nosotros__texto">Bienvenidos a Cursos Cocina, donde exploraremos el arte culinario y
+                    aprenderemos a preparar deliciosos platos que deleitarán a nuestros paladares. Durante estos cursos,
+                    nos enfocaremos en mejorar nuestras habilidades culinarias, desde la selección de ingredientes
+                    frescos hasta la presentación final del plato. Juntos, exploraremos las técnicas de cocina y las
+                    herramientas necesarias para preparar una variedad de platos que satisfagan diferentes gustos y
+                    necesidades dietéticas. Además, compartiremos consejos y trucos para hacer la cocina más fácil y
+                    divertida. Esperamos que con estos cursos sea una experiencia gratificante y que cada uno de
+                    nosotros pueda llevar a casa nuevas habilidades y conocimientos culinarios.</p>
             </div>
 
-            <div class="nosotros__segunda-imagen">
+            <div class="nosotros__segunda--imagen" data-aos="zoom-in" data-aos-duration="2000">
                 <img class="nosotros__imagen" src="../img/nosotros-fondo-2.webp" alt="Cocinero terminando su plato">
             </div>
-            <div class="nosotros__descripcion-segunda">
-                <p class="nosotros__texto">Nosotros trabajamos arduamente para ofrecer un curso de cocina enriquecedor y emocionante. Nos aseguramos de que los ingredientes sean de la mejor calidad y que las técnicas de cocina sean las más actuales y efectivas. Nuestro objetivo es ayudarte a descubrir tu pasión por la cocina y a mejorar tus habilidades culinarias mientras disfrutas de la experiencia.</p>
+            <div class="nosotros__descripcion--segunda">
+                <p class="nosotros__texto">Nosotros trabajamos arduamente para ofrecer un curso de cocina enriquecedor y
+                    emocionante. Nos aseguramos de que los ingredientes sean de la mejor calidad y que las técnicas de
+                    cocina sean las más actuales y efectivas. Nuestro objetivo es ayudarte a descubrir tu pasión por la
+                    cocina y a mejorar tus habilidades culinarias mientras disfrutas de la experiencia.</p>
             </div>
         </div>
     </section>
@@ -121,9 +134,15 @@
     </footer>
 
 
+    <!-- BootsTrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- Animacion JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

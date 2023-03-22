@@ -26,16 +26,18 @@
     a {
         color: v.$blanco;
 
-        &:hover{
-            color: gray;
+        &:hover {
+            color: v.$gris;
         }
     }
 }
 
 
-.footer__contacto span {
-    color: v.$blanco;
-    margin: 0 1rem;
+.footer__contacto{
+    span{
+        color: v.$blanco;
+        margin: 0 1rem;
+    }
 }
 
 .footer__copy {
@@ -43,7 +45,6 @@
 }
 
 .borde {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid v.$gris;
     padding: 1rem;
-
 }

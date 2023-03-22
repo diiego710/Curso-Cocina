@@ -6,31 +6,33 @@
     margin: 2rem 1rem;
     display: grid;
     gap: 2rem;
+    overflow: hidden;
 }
 
 
-@media (min-width:768px) {
+@include tablet {
     .nosotros {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .nosotros__primera-imagen {
+    .nosotros__primera--imagen {
         grid-column: 1 / 4;
     }
 
-    .nosotros__segunda-imagen {
-        grid-column: 2 / 5;
-    }
-
-    .nosotros__descripcion-primera {
+    .nosotros__descripcion--primera {
         margin-left: -33rem;
         margin-top: 26rem;
     }
 
-    .nosotros__descripcion-segunda {
+    .nosotros__segunda--imagen {
+        grid-column: 2 / 5;
+    }
+
+    .nosotros__descripcion--segunda {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         margin-top: 31rem;
         margin-right: -33rem;
+        z-index: 5;
     }
 }

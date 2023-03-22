@@ -1,21 +1,19 @@
 @use '../abstracts/variables' as v;
 @use '../base/tipografia' as t;
+@use '../abstracts/mixins';
 
 
 
 .contacto {
   background-image: url(../../img/breakfast-collage-2-1600x-q88.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include bg-imagen;
   height: 50rem;
   position: relative;
   z-index: -1;
 
   &__contenido {
+    @include size(100%, 100%);
     position: absolute;
-    width: 100%;
-    height: 100%;
     background: linear-gradient(270deg, rgb(251 251 251 / 0%) 0%, rgb(241 241 241 / 44%) 88%);
 
     h2 {
@@ -55,10 +53,8 @@
     border: 1px solid v.$gris;
     border-radius: 4px;
 
-    &-height {
+    &--height {
       height: 20rem;
     }
   }
-
-
 }

@@ -1,59 +1,56 @@
 @use '../abstracts/variables' as v;
 @use '../base/tipografia' as t;
+@use '../abstracts/mixins';
+
 
 
 /* Hero de page cursos */
-.curso-banner {
+.course-banner {
     background-image: url(../../img/77166.webp);
-    height: 750px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include bg-imagen;
+    height: 75rem;
 }
 
 /* Contenido de page Curso */
 
-.secction__contenido {
+.course {
     display: grid;
     gap: 2rem;
     margin: 4rem;
 
-    .secction__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: start;
+    &__contenido {
+        @include flex(space-evenly, start);
     }
 
-    .secction__nombre {
+    &__nombre {
         text-transform: uppercase;
         font-weight: bold;
     }
 
-    .secction-parrafo {
+    &__parrafo {
         padding: 2rem 0;
     }
 }
 
 
-
 @media (max-width: 768px) {
-    .secction-button,
-    .secction__nombre {
+
+    .course__button,
+    .course__nombre {
         width: 100%;
         text-align: center;
 
     }
 }
 
-@media (min-width: 768px) {
-    .secction__contenido {
+@include tablet{
+    .course {
         grid-template-columns: 1fr 2fr;
     }
 }
 
-@media (min-width: 992px) {
-    .secction__contenido {
+@include desktop {
+    .course {
         grid-template-columns: 1fr 3fr;
     }
 }

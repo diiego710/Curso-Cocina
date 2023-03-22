@@ -1,0 +1,38 @@
+// Imagenes
+@mixin bg-imagen($position:center){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: $position;
+}
+
+// Flex
+@mixin flex($content:center, $items:center){
+    display: flex;
+    flex-direction: column;
+    justify-content: $content;
+    align-items: $items;
+}
+
+// Tamaño
+@mixin size($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin telefono{
+    @media (min-width: 480px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: 992px){
+        @content;
+    }
+}
