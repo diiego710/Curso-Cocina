@@ -250,6 +250,13 @@ img {
   color: #fff;
 }
 
+.whatsapp {
+  margin: 1rem;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
 /* Hero de page cursos */
 .course-banner {
   background-image: url(../../img/77166.webp);
