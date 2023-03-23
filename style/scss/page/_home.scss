@@ -32,6 +32,16 @@
     }
 }
 
+@media (max-width: 576px) {
+    .banner__contenido{
+        width: 100%;
+    }
+
+    .banner__text{
+        margin: 0 1rem;
+    }
+}
+
 // Habilidades
 
 .habilidades {

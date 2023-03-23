@@ -171,6 +171,14 @@ img {
   }
 }
 
+@media (max-width: 576px) {
+  .banner__contenido {
+    width: 100%;
+  }
+  .banner__text {
+    margin: 0 1rem;
+  }
+}
 .habilidades {
   margin: 4rem 2rem;
   display: flex;
