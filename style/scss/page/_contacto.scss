@@ -14,18 +14,18 @@
   &__contenido {
     @include size(100%, 100%);
     position: absolute;
-    background: linear-gradient(270deg, rgb(251 251 251 / 0%) 0%, rgb(241 241 241 / 44%) 88%);
 
     h2 {
       margin-left: 2rem auto;
       font-size: 8rem;
+      text-shadow: 2px 2px #040404;
     }
   }
 }
 
 .formulario {
   border-radius: 10px;
-  margin: -15rem 0 2rem 0;
+  margin: -15rem 1rem 2rem;
   background-color: v.$blanco;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,1);
 
