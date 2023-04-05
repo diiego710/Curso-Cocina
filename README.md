@@ -31,7 +31,7 @@ npm install
 
 
 ## Deploy
-- [Cursos Cocina](http://cursococina.epizy.com/)
+- [Cursos Cocina](http://cursococina.lovestoblog.com/)
 
 ## Autor
  -  [Diego Sanchez](https://github.com/diiego710)
